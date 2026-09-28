@@ -3,11 +3,50 @@
 
 <head>
 <title>My Top 3 Picks</title>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Banner Page</title>
+    <style>
+        /* Remove default browser gaps around the edges of the page */
+        body {
+            margin: 0;
+            padding: 0;
+            /* Added padding-top so your paragraph text doesn't get squished under the fixed banner */
+            padding-top: 80px; 
+            font-family: Arial, sans-serif;
+        }
+
+        /* Style the blue rectangle */
+        .top-banner {
+            position: fixed;        /* Pins the rectangle to the top of the screen */
+            top: 0;
+            left: 0;
+            width: 100%;            /* Forces it to stretch completely across the screen */
+            height: 80px;           /* Controls the thickness/height of the rectangle */
+            background-color: blue; /* Sets the rectangle color */
+            z-index: 1000;          /* Keeps it on top of other elements while scrolling */
+
+            /* New properties added to center your heading inside the box */
+            display: flex;
+            align-items: center;    /* Centers text vertically */
+            justify-content: center; /* Centers text horizontally */
+        }
+
+        /* New styling rule for your heading */
+        .top-banner h1 {
+            color: white;           /* Makes the text visible over the blue color */
+            margin: 0;              /* Removes default browser margins around headers */
+            font-size: 28px;        /* Adjust text size as you prefer */
+        }
+    </style>
 </head>
 
 <body>
 <body style="background-color: LightSkyBlue;">
+   <div class="top-banner">
   <h1>My Predicted Top 3 Fantasy Basketball Picks This Season</h1>
+    </div>
+  <div style="padding: 20px;">
 <h2>1. Nikola Jokic</h2>
   <p>Locking in Jokić at No. 1 is the easiest decision you'll make all draft. He just casually put up a historic triple-double average —>27.7 PPG, 12.9 RPG, and 10.7 APG. Getting elite center rebounds alongside league-leading assists is an absolute fantasy cheat code.</p>
 <img src="Jokic Drawing.png" alt="My MS Paint drawing"height="150">
@@ -18,7 +57,8 @@
 <h2>3. Luka Donic</h2>
   <p>Some people may say that Shai should be over Luka, but I disagree. With everyone good off the team, Luka is the ultimate floor pick. He's coming off a massive season where he averaged 33.5 points, 7.7 rebounds, and 8.3 assists per game. Now that there’s absolutely nobody left to take shots away from him, he's going to carry an even more impossible workload. Expect massive stats on volume alone.</p>
 <img src="Luka Drawing.png" alt="My MS Paint drawing"height="150">
-<p>To see the espn rankings: <a href="https://www.espn.com/fantasy/basketball/story/_/id/49960162/fantasy-basketball-points-league-rankings-2026-27-nba-season">Clickable Link Text Here</a></p>
+<p>To see the espn rankings: <a href="https://www.espn.com/fantasy/basketball/story/_/id/49960162/fantasy-basketball-points-league-rankings-2026-27-nba-season">click here</a></p>
+    </div>
 </body>
 
 </html>
